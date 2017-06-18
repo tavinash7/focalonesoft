@@ -1,0 +1,53 @@
+/*--------- About us ---------*/
+.about-page{
+	.navbar{
+		background-color: #e6e8e9;
+		position: relative;
+		background-image: url(../images/about_banner.jpeg);
+		background-size: cover;
+		width: 100%;
+		.header-logo 
+		{	
+			.header-title {
+				padding: 15% 0;
+				.title,
+				.sub-title{
+					color: #ffffff;
+					text-shadow: 2px 2px #222;
+				}	
+			}	
+			.breadcrumb-nav {
+				&:before{
+					border-color: #222;	
+				}
+				a{
+					color: #222;
+				}
+				.breadcrumb{
+					margin-top: @space-xs;
+				}
+			}
+		}
+	}
+	.about-info{
+		padding-top: 0;
+		.about-company{
+			background: -webkit-linear-gradient(left,#003b66,#8f297c);
+		    background: linear-gradient(to right,#003b66,#8f297c);
+		    background-size: cover;
+		    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorStr='#FF003B66', endColorStr='#FF8F297C');
+		    zoom:1;
+		    position: relative;
+		    .transition(background-color 0.5s cubic-bezier(0.23, 1, 0.32, 1));
+		    padding: 8% 0;
+		    margin-bottom: @space-lg + @space-md;
+		    p{
+		    	max-width: 992px;
+		    	margin: 0 auto;
+		    	color: #ffffff;
+		    	font-size: @text-font-size-18;
+		    	text-align: center;
+		    }
+		}
+	}
+}

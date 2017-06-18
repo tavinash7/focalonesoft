@@ -1,0 +1,40 @@
+/*--------- Conatct us ---------*/
+.contact-page{
+	.navbar{
+		background-color: #e6e8e9;
+		position: relative;
+		.header-logo 
+		{	
+			.header-title {
+				.title,
+				.sub-title{
+					color: #222;
+				}	
+			}	
+			.breadcrumb-nav {
+				&:before{
+					border-color: #222;	
+				}
+				a{
+					color: #222;
+				}
+				.breadcrumb{
+					margin-top: @space-xs;
+				}
+			}
+		}
+	}
+	.contact-form{
+		padding: 35px 5% 70px;
+		max-width: 992px;
+		.form-group{
+			margin-bottom: @space-lg + @space-sm;
+			label{
+				margin-bottom: @space-xs;
+			}
+		}
+		.action-group{
+			margin-top: @space-lg;
+		}
+	}
+}

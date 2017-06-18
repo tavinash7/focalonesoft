@@ -1,0 +1,283 @@
+/*bg-color*/
+@body-transperancy:								100%;
+@body-bg:										rgba(255, 255, 255, @body-transperancy);
+
+@body-text-color:								#828282;
+
+
+@font-family-default-primary: 					"Roboto Light";
+@font-family-default-secondary: 				"Roboto regular";
+
+
+
+
+//====================================================
+//Font sizes
+//====================================================
+
+@heading-font-family-h1:						@font-family-default-secondary; 
+@heading-font-weight-h1:						lighter;
+@heading-font-size-h1:							48px;
+@heading-line-height-h1:						48px;
+@heading-font-color-h1:							#FFFFFF;
+
+@heading-font-family-h2:						@font-family-default-secondary; 
+@heading-font-weight-h2:						lighter; 
+@heading-font-size-h2:							32px;
+@heading-line-height-h2:						32px;
+@heading-font-color-h2:							#575757;
+
+@heading-font-family-h3:						@font-family-default-secondary; 
+@heading-font-weight-h3:						lighter; 
+@heading-font-size-h3:							24px;
+@heading-line-height-h3:						24px;
+@heading-font-color-h3:							#0197A3;
+
+@heading-font-family-h4:						@font-family-default-secondary; 
+@heading-font-weight-h4:						lighter; 
+@heading-font-size-h4:							18px;
+@heading-line-height-h4:						18px;
+@heading-font-color-h4:							#0197A3;
+
+@heading-font-family-h5:						@font-family-default-secondary; 
+@heading-font-weight-h5:						lighter; 
+@heading-font-size-h5:							16px;
+@heading-line-height-h5:						16px;
+@heading-font-color-h5:							#0197A3;
+
+
+@heading-font-family-h6:						@font-family-default-secondary; 
+@heading-font-weight-h6:						lighter; 
+@heading-font-size-h6:							14px;
+@heading-line-height-h6:						14px;
+@heading-font-color-h6:							#FFFFFF;
+
+
+//====================================================
+// Button
+//====================================================
+
+@button-default-height:							34px;
+@button-default-width:							auto;
+@button-default-font-family:					@font-family-default-primary;
+@button-default-font-weight:					400;
+@button-default-font-size:						14px;
+@button-default-font-color:						#989BA2;
+@button-default-text-alignment:					center;
+@button-default-bg-transperancy:				1;
+@button-default-bg-color:						#ECF0F1;
+@button-default-border-color:					#ECF0F1;
+
+@button-default-font-hover-color:				#575757;
+@button-default-bg-hover-transperancy:			0.8;
+@button-default-bg-hover-color:					#ECF0F1;
+@button-default-border-hover-color:				#ECF0F1;
+
+@button-primary-height:							34px;
+@button-primary-width:							auto;
+@button-primary-font-family:					@font-family-default-primary;
+@button-primary-font-weight:					400;
+@button-primary-font-size:						14px;
+@button-primary-font-color:						#FFFFFF;
+@button-primary-text-alignment:					center;
+@button-primary-bg-transperancy:				1;
+@button-primary-bg-color:						#0197A3;
+@button-primary-border-color:					#2298a2;
+
+@button-primary-font-hover-color:				#FFFFFF;
+@button-primary-bg-hover-transperancy:			1;
+@button-primary-bg-hover-color:					#13BACB;
+@button-primary-border-hover-color:				#2298a2;
+
+
+@button-secondary-height:						34px;
+@button-secondary-width:						auto;
+@button-secondary-font-family:					@font-family-default-primary;
+@button-secondary-font-weight:					400;
+@button-secondary-font-size:					14px;
+@button-secondary-font-color:					#989BA2;
+@button-secondary-text-alignment:				center;
+@button-secondary-bg-transperancy:				1;
+@button-secondary-bg-color:						#ecf0f1;
+@button-secondary-border-color:					#ECF0F1;
+
+@button-secondary-font-hover-color:				#989BA2;
+@button-secondary-bg-hover-transperancy:		1;
+@button-secondary-bg-hover-color:				#ECF0F1;
+@button-secondary-border-hover-color:			#ECF0F1;
+
+
+@button-plain-height:							34px;
+@button-plain-width:							auto;
+@button-plain-font-family:						@font-family-default-primary;
+@button-plain-font-weight:						400;
+@button-plain-font-size:						14px;
+@button-plain-font-color:						#0197A3;
+@button-plain-text-alignment:					center;
+@button-plain-bg-transperancy:					1;
+@button-plain-bg-color:							transparent;
+@button-plain-border-color:						#13BACB;
+
+@button-plain-font-hover-color:					#0197A3;
+@button-plain-bg-hover-transperancy:			1;
+@button-plain-bg-hover-color:					#F5F5F5;
+@button-plain-border-hover-color:				#13BACB;
+
+
+//====================================================
+// Link
+//====================================================
+
+@link-font-family:								@font-family-default-primary;
+@link-font-weight:								400;
+@link-font-size:								14px;
+@link-font-color:								#0197A3;
+
+@link-hover-font-color:							#13BACB;
+@link-active-font-color:						#0197A3;
+
+
+//====================================================
+// Variables 
+//====================================================
+
+/*font family*/
+
+
+@brand-color-default: 								#222222;    // @brand-color-primary:
+@brand-color-default-primary:						#333333;    // @brand-color-primary-dark:
+@brand-color-default-secondary:						#444444;    // @brand-color-primary-light:
+
+@brand-color-primary: 								#000000;    // @brand-color-secondary:
+
+/* Colors*/
+@text-color-special: 								@brand-color-default;   // @text-highlight-color:
+@text-color-heading: 								#575757;    // @text-color-heading:
+
+@text-color-default: 								#828282;    // @text-color-default:
+@text-color-primary: 								#666666;    // @text-color-default-dark:
+@text-color-secondary: 								#B4B7C0;    // @text-color-default-light:
+@text-color-light:	 								#CFCFCF;    // @text-color-lighter:
+
+@text-color-white:									#ffffff;
+@text-color-danger: 								#eb365e;
+
+@input-placeholder-color: 							#d5d6da;
+
+
+/* Bg color */
+@bg-color-special:									@brand-color-default-primary;  
+@bg-color-white: 									#ffffff;
+
+/* font sizes*/
+
+@text-font-size-small: 								12px; 
+@text-font-size-default:							14px;
+@text-font-size-16:									16px;
+@text-font-size-18:									18px;
+@text-font-size-20:									20px;
+
+@icon-font-size-14:									14px;
+@icon-font-size-16:									16px;
+@icon-font-size-18:									18px;
+@icon-font-size-20:									20px;
+
+/*border colors*/
+@border-color-special:								@brand-color-default-primary; // @border-highlight-color:
+
+@border-color-default:	 							#E5E4E5;    // @border-color-default:
+@border-color-primary:	 							#b8b7b7;    // @border-color-dark:
+@border-color-secondary: 							#EBEBEB;    // @border-color-light:
+@border-color-lighter:	 							#D8D8D8;    // @border-color-lighter:
+
+/* box shadow */
+
+@box-shadow-default:								#e0e0e0;
+
+
+/* ------------------ Spaces for Padding & Margin ------------------*/
+
+@space-xs:											4px;
+@space-sm:											8px;
+@space-md:											12px;
+@space-lg:											16px;
+
+/* ------------------ Progress bar------------------*/
+
+
+/*== z-index */
+@header-zindex:										1;
+@fixed-element-zindex:								1030;
+
+
+/*== Header */
+
+@header-bg-color:									transparent;
+@header-text-color:									#FFFFFF;
+@header-link-hover-color: 							@brand-color-default-primary;
+
+
+/*== Footer */
+
+
+
+
+
+
+/* ------------------ Progress bar------------------*/
+
+@progree-bar-bg-color:								#cecfd1;
+@progree-bar-progress-color:						@brand-color-default;
+
+
+
+/* ------------------------ @Media queries variables --------------*/
+
+@grid-container-large:       						1140px;
+@grid-container-medium:      						96%;
+@grid-container-small:       						90%;
+@grid-container-xsmall:      						100%;
+
+@grid-contaner-padding:      8px;
+
+
+/*Extra small screen / phone*/
+/*** Deprecated `@screen-xs` as of v3.0.1*/
+@screen-xs:                  480px;
+/*** Deprecated `@screen-xs-min` as of v3.2.0*/
+@screen-xs-min:              480px;
+/*** Deprecated `@screen-phone` as of v3.0.1*/
+@screen-phone:               @screen-xs-min;
+
+/*Small screen / tablet*/
+/*** Deprecated `@screen-sm` as of v3.0.1*/
+@screen-sm:                  580px;
+@screen-sm-min:              @screen-sm;
+/*** Deprecated `@screen-tablet` as of v3.0.1*/
+@screen-tablet:              @screen-sm-min;
+
+/*Medium screen / desktop*/
+/*** Deprecated `@screen-md` as of v3.0.1*/
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+/*** Deprecated `@screen-desktop` as of v3.0.1*/
+@screen-desktop:             @screen-md-min;
+
+/*Large screen / wide desktop*/
+/*** Deprecated `@screen-lg` as of v3.0.1*/
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-lg-min;
+
+/*So media queries don't overlap when required, provide a maximum*/
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+/* Home Page */
+
+/* side block */
+
+
+@side-nav-width:									75px;

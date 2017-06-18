@@ -1,0 +1,78 @@
+/*--------- Conatct us ---------*/
+.company-page{
+	.navbar{
+		background-color: #e6e8e9;
+		position: relative;
+		.header-logo 
+		{	
+			.header-title {
+				.title,
+				.sub-title{
+					color: #222;
+				}	
+			}	
+			.breadcrumb-nav {
+				&:before{
+					border-color: #222;	
+				}
+				a{
+					color: #222;
+				}
+				.breadcrumb{
+					margin-top: @space-xs;
+				}
+			}
+		}
+	}
+	.company-info{
+		background: -webkit-linear-gradient(left,#003b66,#8f297c);
+	    background: linear-gradient(to right,#003b66,#8f297c);
+	    background-size: cover;
+	    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorStr='#FF003B66', endColorStr='#FF8F297C');
+	    zoom:1;
+	    position: relative;
+	    .transition(background-color 0.5s cubic-bezier(0.23, 1, 0.32, 1));
+	    padding: 75px 0;
+	    .company-content{
+	    	text-align: center;
+	    	margin: 0 auto;
+	    	color: #ffffff;
+	    	max-width: 992px;
+	    }
+	}
+	.our-clients-section{
+		background-color: #ffffff;
+		padding: 75px 0;
+		.clients-heading{
+			h3{
+				font-size: 28px;
+				text-align: center;
+				margin-bottom: 20px;
+				margin-top: 0;
+			}
+			p{
+				color: #757575;
+			    font-family: @font-family-default-secondary;
+			    font-size: 14px;
+			    margin: 0 auto;
+			    max-width: 320px;
+			    position: relative;
+			    padding-bottom: 20px;
+			    text-align: center;
+			    &:after{
+		    		border-bottom: 3px solid #fe6192;
+		    	    bottom: 0px;
+		    	    content: "";
+		    	    left: 0;
+		    	    margin: 0 auto;
+		    	    position: absolute;
+		    	    right: 0;
+		    	    width: 50px;
+		    	}
+			}
+		}
+		.client-info-area{
+		    margin-top: 30px;
+		}
+	}
+}

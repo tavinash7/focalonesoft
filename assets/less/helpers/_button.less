@@ -1,0 +1,21 @@
+.btn{
+ 	padding: 6px 15px;
+ 	font-size: @text-font-size-default;
+ 	.borderRadius(0px);
+ 	//@include opacity(0.9);
+	 	&:hover{
+	 	//	@include opacity(1);
+	 	}
+	&.plain-button{
+	 	.buttons(@button-plain-height, @button-plain-width, @button-plain-font-family, @button-plain-font-weight, @button-plain-font-size, @button-plain-font-color, @button-plain-text-alignment, @button-plain-bg-color, @button-plain-border-color, @button-plain-font-hover-color, @button-plain-bg-hover-color, @button-plain-border-hover-color);
+ 	}
+	&.default-button{
+		.buttons(@button-default-height, @button-default-width, @button-default-font-family, @button-default-font-weight, @button-default-font-size, @button-default-font-color, @button-default-text-alignment, @button-default-bg-color, @button-default-border-color, @button-default-font-hover-color, @button-default-bg-hover-color, @button-default-border-hover-color);
+	}
+	&.primary-button{
+		.buttons(@button-primary-height, @button-primary-width, @button-primary-font-family, @button-primary-font-weight, @button-primary-font-size, @button-primary-font-color, @button-primary-text-alignment, @button-primary-bg-color, @button-primary-border-color, @button-primary-font-hover-color, @button-primary-bg-hover-color, @button-primary-border-hover-color);
+	}
+	&.secondary-button{
+		.buttons(@button-secondary-height, @button-secondary-width, @button-secondary-font-family, @button-secondary-font-weight, @button-secondary-font-size, @button-secondary-font-color, @button-secondary-text-alignment, @button-secondary-bg-color, @button-secondary-border-color, @button-secondary-font-hover-color, @button-secondary-bg-hover-color, @button-secondary-border-hover-color);
+	}
+}

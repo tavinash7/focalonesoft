@@ -1,0 +1,187 @@
+
+// =============================================================================
+//Headings mixins
+// =============================================================================
+
+.headings(@family, @weight, @size, @line-height, @color){
+    font-family: @family;
+    font-weight: @weight;
+    font-size: @size;
+    color: @color;
+}
+
+// =============================================================================
+//Buttons mixins
+// =============================================================================
+
+.buttons(@height, @width, @family, @weight, @size, @color, @text-align,@bg-color, @border-color, @hover-color, @hover-bg-color, @hover-border-color){
+    min-height: @height;
+    width: @width;
+    font-family: @family;
+    font-weight: @weight;
+    font-size: @size;
+    color: @color;
+    text-align: @text-align;
+    background-color: @bg-color;
+    border-color: @border-color;
+    &:hover,
+    &:active{
+        color: @hover-color;
+        background-color: @hover-bg-color;
+        border-color: @hover-border-color;
+    }
+}
+
+// =============================================================================
+//Anchors mixins
+// =============================================================================
+
+.links(@family, @weight, @size, @color, @hover-color, @active-color){
+    font-family: @family;
+    font-weight: @weight;
+    font-size: @size;
+    color: @color;
+    &:focus,
+    &:hover{
+        color: @hover-color;
+        text-decoration: none;
+        outline: 0;
+    }
+    &:active{
+        color: @active-color;
+    }
+}
+
+// =============================================================================
+// Border radius mixin with browser compatibility
+// =============================================================================
+
+.borderRadius(@radius) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-ms-border-radius: @radius;
+	border-radius: @radius;
+}
+
+// =============================================================================
+// Box shadow mixin with browser compatibility
+// =============================================================================
+
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+  -moz-box-shadow: @shadow; 
+    box-shadow: @shadow;
+
+}
+
+// =============================================================================
+// Transition mixin with browser compatibility
+// =============================================================================
+
+.transition(@trans) {
+	-moz-transition: @trans;
+	-ms-transition: @trans;
+	-webkit-transition: @trans;
+	transition: @trans;
+}
+
+.transform(@trans){
+    -moz-transform: @trans;
+    -ms-transform: @trans;
+    -webkit-transform: @trans;
+    transform: @trans;
+}
+// =============================================================================
+// Linear Gradient mixin with browser compatibility
+// =============================================================================
+
+.linearGradient(@top, @bottom){
+    background: @top; /* Old browsers */
+    background: -moz-linear-gradient(top,  @top 0%, @bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@top), color-stop(100%,@bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  @top 0%,@bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  @top 0%,@bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  @top 0%,@bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  @top 0%,@bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+
+// =============================================================================
+// Opacity mixin with browser compatibility
+// =============================================================================
+
+.opacity(@value){
+	@IEValue: @value*100;
+	opacity: @value;
+	//-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+@IEValue+")";
+	filter: alpha(opacity=@IEValue);
+}
+
+// =============================================================================
+//   text overflow ellipsis
+// =============================================================================
+
+.text-ellipsis(){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+//==============================================================================
+//  Font Family
+//==============================================================================
+
+.fontFamily(@name, @fileName){
+    @font-face{
+        font-family: @name;
+        src:url("../fonts/@{fileName}.eot?") format("eot"),
+            url("../fonts/@{fileName}.woff2") format("woff2"),
+            url("../fonts/@{fileName}.woff") format("woff"),
+            url("../fonts/@{fileName}.ttf") format("truetype"),
+            url("../fonts/@{fileName}.svg#@{fileName}") format("svg");
+    }
+}
+
+//====================================================
+// pagination css code
+//====================================================
+.pagination-block{
+    padding: 8px 0;
+}
+.pagination(@textColor: color, @activeColor: active){
+    .pagination{
+        border: 0;
+        & > li{
+            & > a{
+                color: @textColor;
+                border: 0;
+                &:hover,
+                &:focus{
+                    color: @activeColor;
+                    background-color: transparent;
+                }
+            }
+            &.active{
+                pointer-events: none;
+                a{
+                    background-color: @activeColor;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+//====================================================
+// rgbaColorIn css code
+//====================================================
+
+.rgbaColorIn(@color, @opacity : 1){
+  @result: rgba( red(@color), green(@color), blue(@color), @opacity );
+}
+
+

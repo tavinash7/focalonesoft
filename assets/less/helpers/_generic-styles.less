@@ -1,0 +1,145 @@
+body, html {
+	background-color: @body-bg;
+	font-family: @font-family-default-primary;
+	font-size: @text-font-size-default;
+	color: @body-text-color;
+	line-height: 1.42857;
+	margin: 0;
+	padding: 0;
+}
+
+boby{
+	background-color: @body-bg;
+}
+
+//reset the margins for the heading tags
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+
+//Common classes uses across the site and widget views 
+
+.special-text-color {
+	color: @text-color-special;
+}
+.light-text-color {
+	color: @text-color-light;
+}
+.font-bold {
+	font-family: @font-family-default-primary;
+}
+.error,
+.required{
+	color: @text-color-danger;
+}
+.visible-hidden {
+	visibility: hidden;
+}
+.visible-visible {
+	visibility: visible;
+}
+.inline-block{
+	display: inline-block;
+}
+.overflow-hidden{
+	overflow: hidden;
+}
+.disabled {
+	cursor: not-allowed;
+	pointer-events: none;
+	.opacity(0.65);
+}
+.phs-img-responsive{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+::-input-placeholder {
+	color: @input-placeholder-color;
+}
+input::-ms-expand,
+input::-ms-clear,
+input::-ms-reveal {
+	visibility: hidden;
+}
+ul,ol {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+a {
+	cursor: pointer;
+  .transition(all 0.3s cubic-bezier(0.23, 1, 0.32, 1) 0s);
+	.links(@link-font-family, @link-font-weight, @link-font-size, @link-font-color, @link-hover-font-color, @link-active-font-color);
+	&:focus{
+		outline: 1px dotted;
+	}
+}
+strong, b {
+	font-weight: 700;
+	font-family: @font-family-default-secondary;
+}
+
+input[type=text]::-ms-clear{
+	display: none;
+}
+
+input[type=password]::-ms-reveal{
+	display: none;
+}
+
+  /*----- Site layout common styles -----*/
+
+  @media (max-width: 580px){
+    h1 {
+      font-size: ceil(@heading-font-size-h1*0.5);
+    }
+    h2 {
+      font-size: ceil(@heading-font-size-h2*0.6);
+    }
+    h3 {
+      font-size: ceil(@heading-font-size-h3*0.66);
+    }
+    h4 {
+      font-size: ceil(@heading-font-size-h4*0.85);
+    }
+    h5 {
+      font-size: ceil(@heading-font-size-h5*0.85);
+    }
+    h6 {
+      font-size: ceil(@heading-font-size-h6*0.85);
+    }
+    p{
+      font-size: @text-font-size-default + 2;
+    }
+  }
+
+  @media (max-width: 320px){
+    h1 {
+      font-size: ceil(@heading-font-size-h1*0.5);
+    }
+    h2 {
+      font-size: ceil(@heading-font-size-h2*0.6);
+    }
+    h3 {
+      font-size: ceil(@heading-font-size-h3*0.66);
+    }
+    h4 {
+      font-size: ceil(@heading-font-size-h4*0.85);
+    }
+    h5 {
+      font-size: ceil(@heading-font-size-h5*0.85);
+    }
+    h6 {
+      font-size: ceil(@heading-font-size-h6*0.85);
+    }
+    p{
+      font-size: @text-font-size-default;
+    }
+  }
